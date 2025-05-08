@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Стоматологическая клиника "Улыбка"</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#benefits">Преимущества</a></li>
+                <li><a href="#appointment">Запись</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </nav>
+        
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Здоровая улыбка — наша забота</h1>
+                <p>Современные технологии и безболезненное лечение</p>
+                <a href="#appointment" class="btn">Записаться на прием</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="services">
+            <h2>Наши услуги</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('https://avatars.mds.yandex.net/i?id=ecd6111286840f23a42bc7ae85015b5619b9a242-12933567-images-thumbs&n=13')"></div>
+                    <div class="service-content">
+                        <h3>Лечение кариеса</h3>
+                        <p>Безболезненное лечение с анестезией</p>
+                        <div class="price">от 5 500 ₽</div>
+                        <a href="#appointment" class="btn">Записаться</a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('https://avatars.mds.yandex.net/i?id=eb0477b04b55176c467e9a6a5cf4a8546a054784-5884061-images-thumbs&n=13')"></div>
+                    <div class="service-content">
+                        <h3>Чистка зубов</h3>
+                        <p>Профессиональная гигиена полости рта</p>
+                        <div class="price">от 6 900 ₽</div>
+                        <a href="#appointment" class="btn">Записаться</a>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('https://avatars.mds.yandex.net/i?id=a326b2d520958986013be9665443d8ba4a95e02a-10683820-images-thumbs&n=13')"></div>
+                    <div class="service-content">
+                        <h3>Имплантация и Протезирование</h3>
+                        <p>Установка зубных имплантов и протезов</p>
+                        <div class="price">от 36 500 ₽</div>
+                        <a href="#appointment" class="btn">Записаться</a>
+                    </div>                              
+                </div>
+            </div>          
+        </section>
+
+        <section id="benefits">
+            <h2>Почему выбирают нас?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <h3>Безболезненное лечение</h3>
+                    <p>Используем современные методы анестезии для вашего комфорта</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Гарантия качества</h3>
+                    <p>10+ лет на все виды работ</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Семейный пакет</h3>
+                    <p>Скидка 22% для всех членов семьи</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Поддержка 24/7</h3>
+                    <p>Круглосуточная служба поддержки</p>
+            </div>
+        </section>
+        <section id="appointment">
+            <h2>Запись на прием</h2>
+            <form id="appointment-form" class="appointment-form">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Ваше имя" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" placeholder="Телефон" required>
+                </div>
+                <div class="form-group">
+                    <select id="service" required>
+                        <option value="">Выберите услугу</option>
+                        <option value="Лечение">Лечение кариеса</option>
+                        <option value="Чистка">Чистка зубов</option>
+                        <option value="Имплантация">Имплантация и Протезирование</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn">Записаться</button>
+            </form>
+        </section>
+    </main>
+
+    <footer id="contacts">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <div class="branding">
+                        <i class="fas fa-tooth"></i>
+                        <span>Улыбка</span>
+                    </div>
+                </div>
+    
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <p>Улица Дубки,4</p>
+                    <p>+7 (901) 352-82-15</p>
+                </div>
+    
+                <div class="footer-section">
+                    <h4>Режим работы</h4>
+                    <p>Пн-Пт: 9:00 - 21:00</p>
+                    <p>Сб-Вс: 10:00 - 18:00</p>
+                </div>
+            </div>
+    
+            <div class="footer-legal">
+                <p>&copy; 2025 "Улыбка". Все права защищены</p>
+            </div>
+        </div>
+        <script src="scripts.js"></script>
+    </footer>
+<body>
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close-modal"></span>
+            <h3>Спасибо за заявку!</h3>
+            <p>Мы свяжемся с вами в ближайшее время</p>
+            <button class="close-btn">Закрыть</button>
+        </div>
+    </div>
+</div>
